@@ -28,7 +28,7 @@ app.use("/api/review", reviewRouter)
 
 
 app.get("/" , (req,res)=>{
-    res.send("Hello From Server")
+    res.send("Hey Ayush ,Hello From Server")
 })
 
 app.listen(port , ()=>{
