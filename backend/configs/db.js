@@ -1,16 +1,14 @@
-try {
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
-    const conn = await mongoose.connect("mongodb+srv://vlogayush51_db_user:Z9gDSaTAdepeGcEg@cluster0.yidlauw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    });
-
-    console.log(`✅ DB Connected: ${conn.connection.host}`);
-} catch (error) {
-    console.error("❌ DB Connection Failed");
-    console.error(error.message);
-    process.exit(1);
-}
-
+const connectDb = async () => {
+  try {
+    await mongoose.connect("mongodb+srv://vlogayush51_db_user:osHcKtH5hXikbSlr@cluster0.salwarb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+    console.log("DB connected ✅");
+  } catch (error) {
+    console.log("DB connection error ❌", error);
+  }
+};
 
 export default connectDb;
