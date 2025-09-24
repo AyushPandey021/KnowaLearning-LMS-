@@ -16,7 +16,7 @@ let app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:"https://lms-testing-frontend.vercel.app/",
+    origin:"https://lms-testing-frontend.vercel.app",
     credentials:true
 }))
 app.use("/api/auth", authRouter)
