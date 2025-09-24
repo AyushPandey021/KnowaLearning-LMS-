@@ -26,7 +26,7 @@ import ViewLecture from './pages/ViewLecture'
 import SearchWithAi from './pages/SearchWithAi'
 import getAllReviews from './customHooks/getAllReviews'
 
-export const serverUrl = "https://lms-testing-backend.vercel.app"
+export const serverUrl = "https://lms-testing-backend.onrender.com"
 
 function App() {
   

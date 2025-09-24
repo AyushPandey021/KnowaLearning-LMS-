@@ -2,12 +2,23 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
 
+// Use environment variable for MongoDB URL
+const mongoURL = process.env.MONGODB_URL;
+
 const connectDb = async () => {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/teradata🥳⭐");
+    if (!mongoURL) {
+      throw new Error("MongoDB URL is not defined in .env file");
+    }
+
+    await mongoose.connect(mongoURL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+
     console.log("DB connected ✅");
   } catch (error) {
-    console.log("DB connection error ❌", error);
+    console.error("DB connection error ❌", error);
   }
 };
 
