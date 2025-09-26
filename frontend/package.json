@@ -4,8 +4,11 @@
   "version": "0.0.0",
   "type": "module",
 "scripts": {
+  "dev": "vite",
+  "build": "vite build",
   "start": "serve -s dist"
-},
+}
+,
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
     "@tailwindcss/vite": "^4.1.13",
