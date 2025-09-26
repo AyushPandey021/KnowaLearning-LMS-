@@ -4,11 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "start": "serve -s dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
@@ -25,6 +23,7 @@
     "react-spinners": "^0.17.0",
     "react-toastify": "^11.0.5",
     "recharts": "^3.2.1",
+    "serve": "^14.2.5",
     "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
