@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/knowa.png";
+import mean from "../assets/login-sign.png";
 import google from "../assets/google.jpg";
 import axios from "axios";
 import { serverUrl } from "../App";
@@ -177,10 +178,19 @@ function SignUp() {
             </span>
           </div>
         </div>
-        <div className="w-[50%] h-[100%] rounded-r-2xl bg-[black] md:flex items-center justify-center flex-col hidden">
-          <img src={logo} className="w-30 shadow-2xl" alt="" />
-          <span className="text-[white] text-2xl">VIRTUAL COURSES</span>
-        </div>
+        <div className='w-[50%] h-[100%] rounded-r-2xl relative hidden md:flex items-center justify-end flex-col overflow-hidden'>
+       {/* Background image */}
+       <img 
+         src={mean} 
+         className='absolute top-0 left-0 w-full h-full object-cover' 
+         alt="KnowVa Courses" 
+       />
+     
+       {/* Logo at the bottom */}
+       <div className='relative w-full flex justify-center mb-6 z-10'>
+         <img src={logo} alt="KnowVa Logo" className='w-32 h-auto' />
+       </div>
+     </div>
       </form>
     </div>
   );

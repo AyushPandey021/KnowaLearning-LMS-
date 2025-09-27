@@ -1,44 +1,57 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/logo.jpg"; // replace with actual path
+import logo from "../assets/knowa.png"; // replace with actual path
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
-  let navigate = useNavigate();
-  return (
-    <footer className="bg-black text-gray-300 py-10 px-6">
-      <div className="max-w-7xl mx-auto flex lg:items-center items-start justify-center gap-[40px] lg:gap-[150px] flex-col lg:flex-row">
+  const navigate = useNavigate();
 
-        {/* Logo + Description */}
-        <div className="lg:w-[40%] md:w-[50%] w-[100%]">
-          <img src={logo} alt="Logo" className="h-10 mb-3 border-1 rounded-[5px]" />
-          <h2 className="text-xl font-bold text-white mb-3">Virtual Courses</h2>
-          <p className="text-sm">
+  return (
+    <footer className="bg-gradient-to-r from-gray-900 to-black text-gray-300 py-12 px-6">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row lg:justify-between gap-12 lg:gap-20">
+
+        {/* Logo & Description */}
+        <div className="lg:w-[40%] flex flex-col gap-4 items-center lg:items-start text-center lg:text-left">
+          <img src={logo} alt="Logo" className="h-30 w-auto rounded-md mx-auto lg:mx-0" />
+          <h2 className="text-2xl font-bold text-white">Virtual Courses</h2>
+          <p className="text-gray-400 text-sm">
             AI-powered learning platform to help you grow smarter. Learn anything, anytime, anywhere.
           </p>
+
+          {/* Social Icons */}
+          <div className="flex gap-4 mt-3 justify-center lg:justify-start">
+            {[FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram].map((Icon, i) => (
+              <div
+                key={i}
+                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-blue-600 transition-all duration-300 transform hover:scale-110"
+              >
+                <Icon className="text-white text-lg" />
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Quick Links */}
-        <div className="lg:w-[30%] md:w-[100%]">
-          <h3 className="text-white font-semibold mb-2">Quick Links</h3>
-          <ul className="space-y-1 text-sm">
-            <li className="hover:text-white cursor-pointer" onClick={() => navigate("/")}>Home</li>
-            <li className="hover:text-white cursor-pointer" onClick={() => navigate("/allcourses")}>Courses</li>
-            <li className="hover:text-white cursor-pointer" onClick={() => navigate("/login")}>Login</li>
-            <li className="hover:text-white cursor-pointer" onClick={() => navigate("/profile")}>My Profile</li>
+        <div className="lg:w-[25%] flex flex-col gap-3 text-center lg:text-left">
+          <h3 className="text-white font-semibold text-lg mb-2">Quick Links</h3>
+          <ul className="space-y-2">
+            <li className="hover:text-white cursor-pointer transition-colors" onClick={() => navigate("/")}>Home</li>
+            <li className="hover:text-white cursor-pointer transition-colors" onClick={() => navigate("/allcourses")}>Courses</li>
+            <li className="hover:text-white cursor-pointer transition-colors" onClick={() => navigate("/login")}>Login</li>
+            <li className="hover:text-white cursor-pointer transition-colors" onClick={() => navigate("/profile")}>My Profile</li>
           </ul>
         </div>
 
         {/* Explore Categories */}
-        <div className="lg:w-[30%] md:w-[100%]">
-          <h3 className="text-white font-semibold mb-2">Explore Categories</h3>
-          <ul className="space-y-1 text-sm">
-            <li className="hover:text-white">Web Development</li>
-            <li className="hover:text-white">AI/ML</li>
-            <li className="hover:text-white">Data Science</li>
-            <li className="hover:text-white">UI/UX Design</li>
+        <div className="lg:w-[25%] flex flex-col gap-3 text-center lg:text-left">
+          <h3 className="text-white font-semibold text-lg mb-2">Explore Categories</h3>
+          <ul className="space-y-2">
+            <li className="hover:text-white cursor-pointer transition-colors">Web Development</li>
+            <li className="hover:text-white cursor-pointer transition-colors">AI/ML</li>
+            <li className="hover:text-white cursor-pointer transition-colors">Data Science</li>
+            <li className="hover:text-white cursor-pointer transition-colors">UI/UX Design</li>
           </ul>
         </div>
-
       </div>
 
       {/* Bottom Bar */}

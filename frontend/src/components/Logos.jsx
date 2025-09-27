@@ -1,35 +1,33 @@
-import React from 'react'
+import React from "react";
 import { MdCastForEducation } from "react-icons/md";
 import { SiOpenaccess } from "react-icons/si";
 import { FaSackDollar } from "react-icons/fa6";
 import { BiSupport } from "react-icons/bi";
 import { FaUsers } from "react-icons/fa";
+
 function Logos() {
+  const items = [
+    { icon: <MdCastForEducation />, text: "20k+ Online Courses", bg: "from-blue-200 to-blue-200" },
+    { icon: <SiOpenaccess />, text: "Lifetime Access", bg: "from-green-100 to-green-200"  },
+    { icon: <FaSackDollar />, text: "Value For Money", bg: "from-yellow-100 to-yellow-200" },
+    { icon: <BiSupport />, text: "Lifetime Support", bg: "from-purple-100 to-purple-200" },
+    { icon: <FaUsers />, text: "Community Support", bg: "from-pink-100 to-pink-200" },
+  ];
+
   return (
-    <div className='w-[100vw] min-h-[90px]  flex items-center justify-center flex-wrap gap-4 md:mb-[50px] '>
-        <div className='flex items-center justify-center gap-2  px-5 py-3   rounded-3xl bg-gray-200 cursor-pointer'>
-            <MdCastForEducation className='w-[35px] h-[35px] fill-[#03394b]' />
-            <span className='text-[#03394b]'>20k+ Online Courses</span>
+    <div className="w-full flex flex-wrap items-center justify-center gap-6 py-10 perspective-[1200px]">
+      {items.map((item, index) => (
+        <div
+          key={index}
+          className={`flex items-center gap-3 px-6 py-4 rounded-3xl bg-gradient-to-br ${item.bg} shadow-lg transform transition-transform duration-500 hover:scale-105 hover:-translate-y-2 hover:rotate-1 cursor-pointer`}
+          style={{ transformStyle: "preserve-3d" }}
+        >
+          <div className="text-black text-3xl drop-shadow-md">{item.icon}</div>
+          <span className="text-black font-semibold text-sm">{item.text}</span>
         </div>
-        <div className='flex items-center justify-center gap-2  px-5 py-3   rounded-3xl bg-gray-200 cursor-pointer'>
-            <SiOpenaccess className='w-[30px] h-[30px] fill-[#03394b]' />
-            <span className='text-[#03394b]'>Lifetime Access</span>
-        </div>
-        <div className='flex items-center justify-center gap-2  px-5 py-3   rounded-3xl bg-gray-200 cursor-pointer'>
-            <FaSackDollar className='w-[30px] h-[30px] fill-[#03394b]' />
-            <span className='text-[#03394b]'>Value For Money</span>
-        </div>
-        <div className='flex items-center justify-center gap-2  px-5 py-3  rounded-3xl bg-gray-200 cursor-pointer'>
-            <BiSupport className='w-[35px] h-[35px] fill-[#03394b]' />
-            <span className='text-[#03394b]'>Lifetime Support</span>
-        </div>
-        <div className='flex items-center justify-center gap-2  px-5 py-3   rounded-3xl bg-gray-200 cursor-pointer'>
-            <FaUsers className='w-[35px] h-[35px] fill-[#03394b]' />
-            <span className='text-[#03394b]'>Community Support</span>
-        </div>
-      
+      ))}
     </div>
-  )
+  );
 }
 
-export default Logos
+export default Logos;

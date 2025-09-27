@@ -1,5 +1,5 @@
 import React from 'react'
-import about from "../assets/about.jpg"
+import about from "../assets/Learner.png"
 import VideoPlayer from './VideoPlayer'
 import { TfiLayoutLineSolid } from "react-icons/tfi";
 import { BiSolidBadgeCheck } from "react-icons/bi";

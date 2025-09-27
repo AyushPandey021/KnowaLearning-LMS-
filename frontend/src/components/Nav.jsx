@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from "../assets/logo.jpg"
+import logo from "../assets/knowa.png"
 import { IoMdPerson } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GiSplitCross } from "react-icons/gi";
@@ -31,7 +31,7 @@ function Nav() {
     <div>
     <div className='w-[100%] h-[70px] fixed top-0 px-[20px] py-[10px] flex items-center justify-between bg-[#00000047]  z-10'>
      <div className='lg:w-[20%] w-[40%] lg:pl-[50px] '>
-        <img src={logo} className=' w-[60px]  rounded-[5px] border-2 border-white cursor-pointer' onClick={()=>navigate("/")} alt="" />
+        <img src={logo} className=' w-[150px]  rounded-[5px] cursor-pointer' onClick={()=>navigate("/")} alt="" />
       
      </div>
      
