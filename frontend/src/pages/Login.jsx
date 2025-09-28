@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
+<<<<<<< HEAD
 import knowa from "../assets/Knowa.png";
+=======
+import logo from '../assets/Knowa.png'
+>>>>>>> 433f3d55a6a1c24dce6fb9c7962344d460f82956
 import mean from '../assets/login-sign.png'
 import google from '../assets/google.jpg'
 import axios from 'axios'
