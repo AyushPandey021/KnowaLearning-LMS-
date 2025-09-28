@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from "../assets/knowa.png"
+import logo from "../assets/Knowa.png"
 import { IoMdPerson } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GiSplitCross } from "react-icons/gi";
