@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/knowa.png'
+import logo from '../assets/Knowa.png'
 import mean from '../assets/login-sign.png'
 import google from '../assets/google.jpg'
 import axios from 'axios'
