@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/knowa.png"; // replace with actual path
+import logo from "../assets/Knowa.png"; // replace with actual path
+
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
