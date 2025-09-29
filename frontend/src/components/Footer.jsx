@@ -14,7 +14,7 @@ const Footer = () => {
         {/* Logo & Description */}
         <div className="lg:w-[40%] flex flex-col gap-4 items-center lg:items-start text-center lg:text-left">
           <img src={logo} alt="Logo" className="h-30 w-auto rounded-md mx-auto lg:mx-0" />
-          <h2 className="text-2xl font-bold text-white">Virtual Courses</h2>
+          <h2 className="text-2xl font-bold text-white"> <span className="text-[#38D2CA] text-3xl">K</span>nowa<span className="text-[#38D2CA] text-3xl">L</span>earning </h2>
           <p className="text-gray-400 text-sm">
             AI-powered learning platform to help you grow smarter. Learn anything, anytime, anywhere.
           </p>
@@ -24,7 +24,7 @@ const Footer = () => {
             {[FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram].map((Icon, i) => (
               <div
                 key={i}
-                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-blue-600 transition-all duration-300 transform hover:scale-110"
+                className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-[#38D2CA] transition-all duration-300 transform hover:scale-110"
               >
                 <Icon className="text-white text-lg" />
               </div>

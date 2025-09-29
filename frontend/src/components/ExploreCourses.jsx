@@ -35,7 +35,7 @@ function ExploreCourses() {
           className="px-5 py-3 mt-6 bg-black text-white rounded-lg text-lg font-medium flex items-center gap-2 hover:scale-105 transition"
           onClick={() => navigate("/allcourses")}
         >
-          Explore Courses <SiViaplay className="w-6 h-6" />
+          Explore Courses <SiViaplay className="w-6 h-6 text-[#38D2CA]" />
         </button>
       </div>
 

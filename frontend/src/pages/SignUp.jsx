@@ -14,6 +14,7 @@ import { ClipLoader } from "react-spinners";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { setUserData } from "../redux/userSlice";
+import { IoIosArrowBack } from "react-icons/io";
 function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -72,10 +73,16 @@ function SignUp() {
       >
         <div className="md:w-[50%] w-[100%] h-[100%] flex flex-col items-center justify-center gap-3 ">
           <div>
-            <h1 className="font-semibold text-[black] text-2xl">
-              Let's get Started
-            </h1>
-            <h2 className="text-[#999797] text-[18px]">Create your account</h2>
+          <h1 className="font-semibold text-[black] text-2xl flex items-center gap-2">
+  <button
+    className="p-2 px-3  mr-5 bg-white rounded-full shadow-md hover:bg-gray-200 transition"
+    onClick={() => navigate("/")}
+  >
+    <IoIosArrowBack size={20} />
+  </button>
+  Let's get Started
+</h1>
+            <h2 className="text-[#999797] text-[18px] ml-18">Create your account</h2>
           </div>
           <div className="flex flex-col gap-1 w-[80%] items-start justify-center px-3">
             <label htmlFor="name" className="font-semibold">
@@ -166,7 +173,7 @@ function SignUp() {
             onClick={googleSignUp}
           >
             <img src={google} alt="" className="w-[25px]" />
-            <span className="text-[18px] text-gray-500">oogle</span>{" "}
+            <span className="text-[22px] text-gray-500">oogle</span>{" "}
           </div>
           <div className="text-[#6f6f6f]">
             Already have an account?{" "}

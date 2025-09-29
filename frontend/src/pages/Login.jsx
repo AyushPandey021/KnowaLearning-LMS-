@@ -16,6 +16,7 @@ import { toast } from "react-toastify";
 import { ClipLoader } from "react-spinners";
 import { useDispatch } from "react-redux";
 import { setUserData } from "../redux/userSlice";
+import { IoIosArrowBack } from "react-icons/io";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -71,11 +72,19 @@ function Login() {
         onSubmit={(e) => e.preventDefault()}
       >
         <div className="md:w-[50%] w-[100%] h-[100%] flex flex-col items-center justify-center gap-4 ">
+           
           <div>
+            
             <h1 className="font-semibold text-[black] text-2xl">
+         <button
+            className="p-2 px-3  mr-5 bg-white rounded-full shadow-md hover:bg-gray-200 transition"
+            onClick={() => navigate("/")}
+          >
+            <IoIosArrowBack size={20} />
+          </button>
               Welcome back
             </h1>
-            <h2 className="text-[#999797] text-[18px]">
+            <h2 className="text-[#999797] text-[18px] ml-15">
               Login to your account
             </h2>
           </div>
@@ -144,8 +153,8 @@ function Login() {
             className="w-[80%] h-[40px] border-1 border-[#d3d2d2] rounded-[5px] flex items-center justify-center "
             onClick={googleLogin}
           >
-            <img src={google} alt="" className="w-[25px]" />
-            <span className="text-[18px] text-gray-500">oogle</span>{" "}
+            <img src={google} alt="" className="w-[25px] text-yellow-300" />
+            <span className="text-[22px] text-gray-500">oogle</span>{" "}
           </div>
           <div className="text-[#6f6f6f]">
             Don't have an account?{" "}

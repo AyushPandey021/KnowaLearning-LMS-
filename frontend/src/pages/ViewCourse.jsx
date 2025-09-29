@@ -142,7 +142,7 @@ const handleEnroll = async (courseId, userId) => {
       key: import.meta.env.VITE_RAZORPAY_KEY_ID, // from .env
       amount: orderData.data.amount,
       currency: "INR",
-      name: "Virtual Courses",
+      name: "Knowa Learning ",
       description: "Course Enrollment Payment",
       order_id: orderData.data.id,
       handler: async function (response) {

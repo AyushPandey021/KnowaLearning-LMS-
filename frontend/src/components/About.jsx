@@ -17,12 +17,12 @@ function About() {
           <div className='text-[15px] '>We provide a modern Learning Management System to simplify online education, track progress, and enhance student-instructor collaboration efficiently.</div>
           <div className=' w-[100%] lg:w-[60%]'>
             <div className='flex items-center justify-between  mt-[40px]'>
-              <div className='flex items-center justify-center gap-[10px]'><BiSolidBadgeCheck className='w-[20px] h-[20px]'/>Simplified Learning</div>
-              <div className='flex items-center justify-center gap-[10px]'><BiSolidBadgeCheck className='w-[20px] h-[20px]'/>Expert Trainers</div> 
+              <div className='flex items-center justify-center gap-[10px]'><BiSolidBadgeCheck className='w-[20px] h-[20px] text-[#38D2CA]'/>Simplified Learning</div>
+              <div className='flex items-center justify-center gap-[10px]'><BiSolidBadgeCheck className='w-[20px] h-[20px] text-[#38D2CA]'/>Expert Trainers</div> 
             </div>
             <div className='flex items-center justify-between mt-[20px] '>
-              <div className='flex items-center justify-center gap-[10px]'><BiSolidBadgeCheck className='w-[20px] h-[20px]'/>Big Experience</div>
-              <div className='flex items-center justify-center gap-[10px]'><BiSolidBadgeCheck className='w-[20px] h-[20px]'/>Lifetime Access</div>
+              <div className='flex items-center justify-center gap-[10px]'><BiSolidBadgeCheck className='w-[20px] h-[20px] text-[#38D2CA]'/>Big Experience</div>
+              <div className='flex items-center justify-center gap-[10px]'><BiSolidBadgeCheck className='w-[20px] h-[20px] text-[#38D2CA]'/>Lifetime Access</div>
 
             </div>
           </div>
