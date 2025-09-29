@@ -34,23 +34,24 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="lg:w-[25%] flex flex-col gap-3 text-center lg:text-left">
-          <h3 className="text-white font-semibold text-lg mb-2">Quick Links</h3>
+          <h3 className="text-white font-semibold text-lg mb-2"><Span>Q</Span>uick <Span>L</Span>inks</h3>
+          5
           <ul className="space-y-2">
-            <li className="hover:text-white cursor-pointer transition-colors" onClick={() => navigate("/")}>Home</li>
-            <li className="hover:text-white cursor-pointer transition-colors" onClick={() => navigate("/allcourses")}>Courses</li>
-            <li className="hover:text-white cursor-pointer transition-colors" onClick={() => navigate("/login")}>Login</li>
-            <li className="hover:text-white cursor-pointer transition-colors" onClick={() => navigate("/profile")}>My Profile</li>
+            <li className="hover:text-[#38D2CA] cursor-pointer transition-colors" onClick={() => navigate("/")}>Home</li>
+            <li className="hover:text-[#38D2CA] cursor-pointer transition-colors" onClick={() => navigate("/allcourses")}>Courses</li>
+            <li className="hover:text-[#38D2CA] cursor-pointer transition-colors" onClick={() => navigate("/login")}>Login</li>
+            <li className="hover:text-[#38D2CA] cursor-pointer transition-colors" onClick={() => navigate("/profile")}>My Profile</li>
           </ul>
         </div>
 
         {/* Explore Categories */}
         <div className="lg:w-[25%] flex flex-col gap-3 text-center lg:text-left">
-          <h3 className="text-white font-semibold text-lg mb-2">Explore Categories</h3>
+          <h3 className="text-white font-semibold text-lg mb-2"><Span>E</Span>xplore  <Span>C</Span>ategories</h3>
           <ul className="space-y-2">
-            <li className="hover:text-white cursor-pointer transition-colors">Web Development</li>
-            <li className="hover:text-white cursor-pointer transition-colors">AI/ML</li>
-            <li className="hover:text-white cursor-pointer transition-colors">Data Science</li>
-            <li className="hover:text-white cursor-pointer transition-colors">UI/UX Design</li>
+            <li className="hover:text-[#38D2CA] cursor-pointer transition-colors">Web Development</li>
+            <li className="hover:text-[#38D2CA] cursor-pointer transition-colors">AI/ML</li>
+            <li className="hover:text-[#38D2CA] cursor-pointer transition-colors">Data Science</li>
+            <li className="hover:text-[#38D2CA] cursor-pointer transition-colors">UI/UX Design</li>
           </ul>
         </div>
       </div>
