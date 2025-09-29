@@ -1,16 +1,19 @@
-import {getAuth, GoogleAuthProvider} from "firebase/auth"
+
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_APIKEY ,
-  authDomain: "loginlms-a7ea1.firebaseapp.com",
-  projectId: "loginlms-a7ea1",
-  storageBucket: "loginlms-a7ea1.firebasestorage.app",
-  messagingSenderId: "665916718747",
-  appId: "1:665916718747:web:16dbe0bfe5aeeface0903e"
+  apiKey: "AIzaSyCsD3V0SF8tFz-K9Esr0Cds_13VqG4g6lA",
+  authDomain: "web-app-313ec.firebaseapp.com",
+  projectId: "web-app-313ec",
+  storageBucket: "web-app-313ec.firebasestorage.app",
+  messagingSenderId: "358250341653",
+  appId: "1:358250341653:web:638aee493a37ef9f80b51c",
+  measurementId: "G-KFR7KB3QZR"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app)
+const analytics = getAnalytics(app);
 const provider = new GoogleAuthProvider()
 export {auth,provider}
