@@ -34,8 +34,8 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="lg:w-[25%] flex flex-col gap-3 text-center lg:text-left">
-          <h3 className="text-white font-semibold text-lg mb-2"><Span>Q</Span>uick <Span>L</Span>inks</h3>
-          5
+          <h3 className="text-white font-semibold text-lg mb-2"><span className="text-[#38D2CA]">Q</span>uick <span className="text-[#38D2CA]">L</span>inks</h3>
+          
           <ul className="space-y-2">
             <li className="hover:text-[#38D2CA] cursor-pointer transition-colors" onClick={() => navigate("/")}>Home</li>
             <li className="hover:text-[#38D2CA] cursor-pointer transition-colors" onClick={() => navigate("/allcourses")}>Courses</li>
@@ -46,7 +46,7 @@ const Footer = () => {
 
         {/* Explore Categories */}
         <div className="lg:w-[25%] flex flex-col gap-3 text-center lg:text-left">
-          <h3 className="text-white font-semibold text-lg mb-2"><Span>E</Span>xplore  <Span>C</Span>ategories</h3>
+          <h3 className="text-white font-semibold text-lg mb-2"><span className="text-[#38D2CA]">E</span>xplore  <span className="text-[#38D2CA]">C</span>ategories</h3>
           <ul className="space-y-2">
             <li className="hover:text-[#38D2CA] cursor-pointer transition-colors">Web Development</li>
             <li className="hover:text-[#38D2CA] cursor-pointer transition-colors">AI/ML</li>
