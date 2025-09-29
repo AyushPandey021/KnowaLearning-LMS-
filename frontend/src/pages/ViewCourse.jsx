@@ -217,7 +217,7 @@ setIsEnrolled(true)
             </ul>
 
             {/* Enroll Button */}
-            {!isEnrolled ?<button className="bg-[black] text-white px-6 py-2 rounded hover:bg-gray-700 mt-3" onClick={()=>handleEnroll(courseId , userData._id)}>
+            {!isEnrolled ?<button className="bg-[black] text-white px-6 py-2 rounded hover:bg-[#82ebe5] mt-3" onClick={()=>handleEnroll(courseId , userData._id)}>
               Enroll Now
             </button> :
             <button className="bg-green-200 text-green-600 px-6 py-2 rounded hover:bg-gray-100 hover:border mt-3" onClick={()=>navigate(`/viewlecture/${courseId}`)}>
